@@ -45,3 +45,8 @@ span
   font-weight: bolder;
   font-size: medium;
 }
+button{
+  font-family: 'Indie Flower', cursive;
+  color: rgb(195, 148, 255);
+  background-color: rgb(149, 73, 250);
+}
