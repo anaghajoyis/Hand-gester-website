@@ -1,0 +1,60 @@
+ 
+<html>
+    <head>
+      <title>Hand Gester Website</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&family=Indie+Flower&family=Satisfy&family=Smooch+Sans:wght@100&family=Syne+Mono&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+    <div class="container">
+      
+      <center>
+        <div id="headdiv">
+        <h1 id="heading">Hand Gester app</h1>
+        <span>&#128076;</span> 
+        <span>&#9996;</span> 
+        <span>&#128077;</span> 
+        <span>&#9995;</span> 
+        <span>&#9996;</span> 
+        <span>&#9757;</span>
+          </div>
+        <br><br>
+  
+        <p id="instuct"> Hello! Please take a picture of your hand gester and my trusty program over here, will tell you what it is IF it is gesture of either Amazing, Peace, Best, Hi Five, Let's rock or I wanna answer.
+        </p>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>Camera - </label>
+          <div id="camera"></div>
+          <button id="capture" onclick="capture()">Capture!</button>
+        </div>
+        <div id="predictions" class="col-md-4 col-sm-12 col-xs-12">
+          <p id="result_emotion_name">Prediction 1: <span class="emotion_name"> <span id="emoji"> </span></p>
+          <p id="result_emotion_name2">Prediction 2: <span class="emotion_name"> <span id="emoji"> </span></p>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          
+            <label>Snapshot - </label>
+          <div id="result"></div>
+          <button id="check" onclick="checkit()">Check!</button>
+          <br><br>
+  
+        </div>
+  
+      </center>
+  
+    </div>
+  
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
+   
