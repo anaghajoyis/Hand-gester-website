@@ -23,12 +23,12 @@
         <span>&#9996;</span> 
         <span>&#128077;</span> 
         <span>&#9995;</span> 
-        <span>&#9996;</span> 
+        <span>&#129311;</span> 
         <span>&#9757;</span>
           </div>
         <br><br>
   
-        <p id="instuct"> Hello! Please take a picture of your hand gester and my trusty program over here, will tell you what it is IF it is gesture of either Amazing, Peace, Best, Hi Five, Let's rock or I wanna answer.
+        <p id="instuct"> Hello! Please take a picture of your hand gester and my trusty program over here, will tell you what it is IF it is gesture of either Amazing, Peace, Best, Hi Five, Let's rock or I wanna answer. The actions are at the top for each one respectively.
         </p>
         <div class="col-md-4 col-sm-12 col-xs-12">
           <label>Camera - </label>
@@ -36,14 +36,16 @@
           <button id="capture" onclick="capture()">Capture!</button>
         </div>
         <div id="predictions" class="col-md-4 col-sm-12 col-xs-12">
-          <p id="result_emotion_name">Prediction 1: <span class="emotion_name"> <span id="emoji"> </span></p>
-          <p id="result_emotion_name2">Prediction 2: <span class="emotion_name"> <span id="emoji"> </span></p>
+          <p id="result_emotion_name">Prediction 1: </p>
+          <span id="emoji1"></span>
+          <p id="result_emotion_name2">Prediction 2: </p>
+          <span id="emoji2"></span>
         </div>
         <div class="col-md-4 col-sm-12 col-xs-12">
           
             <label>Snapshot - </label>
           <div id="result"></div>
-          <button id="check" onclick="checkit()">Check!</button>
+          <button id="check" onclick="getresult()">Check!</button>
           <br><br>
   
         </div>
